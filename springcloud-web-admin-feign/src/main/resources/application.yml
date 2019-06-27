@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    config:
+      uri: localhost:8888
+      name: web-admin-feign
+      label: master
+      profile: prod
+
+
+

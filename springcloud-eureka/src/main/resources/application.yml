@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: springcloud-eureka
+  # 后续eureka链路追踪注册地址
+  zipkin:
+    base-url: http://localhost:9411
+server:
+  port: 8761
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+

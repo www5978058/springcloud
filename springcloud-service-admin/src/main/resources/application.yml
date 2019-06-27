@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    config:
+      uri: localhost:8888
+      name: service-admin
+      label: master
+      profile: dev
+
